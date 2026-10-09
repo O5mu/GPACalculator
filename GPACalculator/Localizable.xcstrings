@@ -164,7 +164,7 @@
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل الحالي" } } }
     },
     "Goal Planner" : {
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مخطط الهدف" } } }
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "هدفي" } } }
     },
     "Goal Secured" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الهدف مضمون" } } }
