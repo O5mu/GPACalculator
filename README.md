@@ -8,7 +8,7 @@ A simple GPA calculator for university students, built with SwiftUI and the iOS 
 - 4 point and 5 point grading scales, switchable at any time
 - Optional cumulative GPA from your previous record (completed hours and current GPA)
 - Goal planner: pick a target GPA and your upcoming hours to see the average and letter grade you need, plus what each grade would bring your cumulative GPA to
-- English and Arabic (app name تفوّق), with full right to left layout; numbers and letter grades stay in English in both languages
+- English and Arabic (app name معدّلي), with full right to left layout; numbers and letter grades stay in English in both languages
 - Light and dark mode, Dynamic Type, VoiceOver labels and haptics
 - Courses are saved on the device automatically
 

@@ -14,7 +14,7 @@ jobs:
       HAS_SIGNING: ${{ secrets.P12_BASE64 != '' && secrets.PROVISIONING_PROFILE_BASE64 != '' }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: maxim-lobanov/setup-xcode@v1
         with:
@@ -36,7 +36,7 @@ jobs:
           cp -R build/unsigned/Build/Products/Release-iphoneos/GPACalculator.app build/payload/Payload/
           (cd build/payload && zip -qry ../GPACalculator-unsigned.ipa Payload)
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: GPACalculator-unsigned
           path: build/GPACalculator-unsigned.ipa
@@ -136,7 +136,7 @@ jobs:
             -exportPath build/signed \
             -exportOptionsPlist build/ExportOptions.plist
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: env.HAS_SIGNING == 'true'
         with:
           name: GPACalculator-signed
