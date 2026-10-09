@@ -65,16 +65,23 @@ struct ContentView: View {
             .scrollContentBackground(.hidden)
             .background { AmbientBackground() }
             .navigationTitle("GPA Calculator")
+            // Bottom bar keeps the main actions within thumb reach.
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItem(placement: .bottomBar) {
                     Button("Settings", systemImage: "gearshape") {
                         activeSheet = .settings
                     }
                 }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Add Course", systemImage: "plus") {
+                ToolbarSpacer(.flexible, placement: .bottomBar)
+                ToolbarItem(placement: .bottomBar) {
+                    Button {
                         activeSheet = .newCourse
+                    } label: {
+                        Label("Add Course", systemImage: "plus")
+                            .labelStyle(.titleAndIcon)
+                            .fontWeight(.semibold)
                     }
+                    .buttonStyle(.glassProminent)
                 }
             }
             .navigationDestination(isPresented: $isShowingPlanner) {

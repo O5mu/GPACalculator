@@ -6,7 +6,7 @@
       "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar" : { "stringUnit" : { "state" : "translated", "value" : "معدّلي" } },
-        "en" : { "stringUnit" : { "state" : "new", "value" : "My GPA" } }
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "معدّلي" } }
       }
     },
     "CFBundleName" : {
