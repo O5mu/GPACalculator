@@ -1,0 +1,270 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld credit hours" : {
+      "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "few" : { "stringUnit" : { "state" : "translated", "value" : "%lld ساعات معتمدة" } },
+              "many" : { "stringUnit" : { "state" : "translated", "value" : "%lld ساعة معتمدة" } },
+              "one" : { "stringUnit" : { "state" : "translated", "value" : "ساعة معتمدة واحدة" } },
+              "other" : { "stringUnit" : { "state" : "translated", "value" : "%lld ساعة معتمدة" } },
+              "two" : { "stringUnit" : { "state" : "translated", "value" : "ساعتان معتمدتان" } },
+              "zero" : { "stringUnit" : { "state" : "translated", "value" : "%lld ساعة معتمدة" } }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : { "stringUnit" : { "state" : "translated", "value" : "%lld credit hour" } },
+              "other" : { "stringUnit" : { "state" : "translated", "value" : "%lld credit hours" } }
+            }
+          }
+        }
+      }
+    },
+    "A" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أ" } } }
+    },
+    "A+" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أ+" } } }
+    },
+    "Academic Warning" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إنذار أكاديمي" } } }
+    },
+    "Add Course" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إضافة مادة" } } }
+    },
+    "Add your courses and grades to calculate your GPA." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أضف موادك وتقديراتك لحساب معدلك." } } }
+    },
+    "B" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ب" } } }
+    },
+    "B+" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ب+" } } }
+    },
+    "C" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ج" } } }
+    },
+    "C+" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ج+" } } }
+    },
+    "Cancel" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إلغاء" } } }
+    },
+    "Change Language" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "تغيير اللغة" } } }
+    },
+    "Choose English or Arabic for this app in Settings." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "اختر العربية أو الإنجليزية لهذا التطبيق من الإعدادات." } } }
+    },
+    "Choose the scale your university uses." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "اختر نظام المعدل المعتمد في جامعتك." } } }
+    },
+    "Completed Hours" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الساعات المنجزة" } } }
+    },
+    "Course Name" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "اسم المادة" } } }
+    },
+    "Courses" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المواد" } } }
+    },
+    "Credit Hours" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الساعات المعتمدة" } } }
+    },
+    "Cumulative" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "التراكمي" } } }
+    },
+    "Cumulative GPA" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل التراكمي" } } }
+    },
+    "D" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "د" } } }
+    },
+    "D+" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "د+" } } }
+    },
+    "Delete Course" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حذف المادة" } } }
+    },
+    "Done" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "تم" } } }
+    },
+    "Edit Course" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "تعديل المادة" } } }
+    },
+    "Enter your current cumulative GPA and completed hours to see your new cumulative GPA." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أدخل معدلك التراكمي الحالي وساعاتك المنجزة لمعرفة معدلك التراكمي الجديد." } } }
+    },
+    "Excellent" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ممتاز" } } }
+    },
+    "F" : {
+      "comment" : "Letter grade",
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "هـ" } } }
+    },
+    "Good" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "جيد" } } }
+    },
+    "GPA" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل" } } }
+    },
+    "GPA Calculator" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حاسبة المعدل" } } }
+    },
+    "Grade" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "التقدير" } } }
+    },
+    "Grade Points" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "نقاط التقديرات" } } }
+    },
+    "Grading Scale" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "نظام المعدل" } } }
+    },
+    "Hours" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الساعات" } } }
+    },
+    "Language" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "اللغة" } } }
+    },
+    "New Course" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مادة جديدة" } } }
+    },
+    "No Courses Yet" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "لا توجد مواد بعد" } } }
+    },
+    "out of %@" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "من %@" } } }
+    },
+    "Out of %lld" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "من %lld" } } }
+    },
+    "Pass" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مقبول" } } }
+    },
+    "Points" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "النقاط" } } }
+    },
+    "Previous Semesters" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الفصول السابقة" } } }
+    },
+    "Remove All Courses" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حذف جميع المواد" } } }
+    },
+    "Remove all courses?" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حذف جميع المواد؟" } } }
+    },
+    "Save" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حفظ" } } }
+    },
+    "Semester GPA" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل الفصلي" } } }
+    },
+    "Settings" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الإعدادات" } } }
+    },
+    "This can't be undone." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "لا يمكن التراجع عن هذا الإجراء." } } }
+    },
+    "Untitled Course" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مادة بدون اسم" } } }
+    },
+    "Very Good" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "جيد جدًا" } } }
+    },
+    "Add courses or your previous record to plan from your current GPA." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أضف موادك أو سجلك السابق للتخطيط بناءً على معدلك الحالي." } } }
+    },
+    "Aim for %@ or better in every course." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "استهدف %@ أو أعلى في كل مادة." } } }
+    },
+    "Below your target" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أقل من هدفك" } } }
+    },
+    "Credit hours you plan to take before reaching your goal." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الساعات المعتمدة التي تخطط لدراستها قبل الوصول إلى هدفك." } } }
+    },
+    "Current GPA" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل الحالي" } } }
+    },
+    "Goal Planner" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مخطط الهدف" } } }
+    },
+    "Goal Secured" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الهدف مضمون" } } }
+    },
+    "If You Average" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إذا كان متوسط تقديراتك" } } }
+    },
+    "in your next %lld credit hours" : {
+      "localizations" : {
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "few" : { "stringUnit" : { "state" : "translated", "value" : "خلال %lld ساعات معتمدة قادمة" } },
+              "many" : { "stringUnit" : { "state" : "translated", "value" : "خلال %lld ساعة معتمدة قادمة" } },
+              "one" : { "stringUnit" : { "state" : "translated", "value" : "خلال ساعة معتمدة واحدة قادمة" } },
+              "other" : { "stringUnit" : { "state" : "translated", "value" : "خلال %lld ساعة معتمدة قادمة" } },
+              "two" : { "stringUnit" : { "state" : "translated", "value" : "خلال ساعتين معتمدتين قادمتين" } },
+              "zero" : { "stringUnit" : { "state" : "translated", "value" : "خلال %lld ساعة معتمدة قادمة" } }
+            }
+          }
+        },
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : { "stringUnit" : { "state" : "translated", "value" : "in your next credit hour" } },
+              "other" : { "stringUnit" : { "state" : "translated", "value" : "in your next %lld credit hours" } }
+            }
+          }
+        }
+      }
+    },
+    "is the highest you can reach in these hours, even with top grades. Try more hours or a lower target." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "هو أعلى معدل يمكنك الوصول إليه خلال هذه الساعات حتى مع أعلى التقديرات. جرّب ساعات أكثر أو هدفًا أقل." } } }
+    },
+    "Meets your target" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "يحقق هدفك" } } }
+    },
+    "Out of Reach" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "بعيد المنال" } } }
+    },
+    "See what you need to reach your target GPA." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "اعرف ما تحتاجه للوصول إلى معدلك المستهدف." } } }
+    },
+    "Target %@" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الهدف %@" } } }
+    },
+    "Target GPA" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل المستهدف" } } }
+    },
+    "Upcoming Hours" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "الساعات القادمة" } } }
+    },
+    "Within Reach" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "في المتناول" } } }
+    },
+    "You need an average of" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "تحتاج إلى متوسط" } } }
+    },
+    "You'll stay at or above your target even with the lowest grades." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ستبقى عند هدفك أو أعلى منه حتى مع أدنى التقديرات." } } }
+    },
+    "Your cumulative GPA after the upcoming hours if you average each grade." : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "معدلك التراكمي بعد الساعات القادمة لو كان متوسط تقديراتك بكل تقدير من هذه." } } }
+    }
+  },
+  "version" : "1.0"
+}
