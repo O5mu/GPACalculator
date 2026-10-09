@@ -38,3 +38,7 @@ A simple GPA calculator for university students, built with SwiftUI and the iOS 
 3. Pick an iPhone simulator or your device and press Run.
 
 To test Arabic, edit the scheme (Product > Scheme > Edit Scheme > Run > Options) and set App Language to Arabic, or change the language for the app in the iOS Settings app.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
