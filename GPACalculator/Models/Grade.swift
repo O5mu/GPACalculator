@@ -9,7 +9,7 @@ enum GradeScale: Int, CaseIterable, Codable, Identifiable {
 
     var maximum: Double { Double(rawValue) }
 
-    var title: LocalizedStringResource { "Out of \(rawValue)" }
+    var title: LocalizedStringResource { "Out of \(String(rawValue))" }
 
     /// Sensible default: Saudi universities mostly use the 5 point scale.
     static var regionalDefault: GradeScale {
@@ -31,19 +31,8 @@ enum Grade: String, CaseIterable, Codable, Identifiable {
 
     var id: String { rawValue }
 
-    var letter: LocalizedStringResource {
-        switch self {
-        case .aPlus: LocalizedStringResource("A+", comment: "Letter grade")
-        case .a: LocalizedStringResource("A", comment: "Letter grade")
-        case .bPlus: LocalizedStringResource("B+", comment: "Letter grade")
-        case .b: LocalizedStringResource("B", comment: "Letter grade")
-        case .cPlus: LocalizedStringResource("C+", comment: "Letter grade")
-        case .c: LocalizedStringResource("C", comment: "Letter grade")
-        case .dPlus: LocalizedStringResource("D+", comment: "Letter grade")
-        case .d: LocalizedStringResource("D", comment: "Letter grade")
-        case .f: LocalizedStringResource("F", comment: "Letter grade")
-        }
-    }
+    /// Letter grades are always shown in English, in every language.
+    var letter: String { rawValue }
 
     /// Grade points on the requested scale. The 5 point scale is the 4 point scale plus one,
     /// so an F counts as 1.0 out of 5 and 0.0 out of 4.

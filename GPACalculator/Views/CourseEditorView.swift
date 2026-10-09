@@ -72,12 +72,10 @@ struct GradePicker: View {
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 10), count: 3)
 
     var body: some View {
-        GlassEffectContainer(spacing: 10) {
-            LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(Grade.allCases) { grade in
-                    GradeCell(grade: grade, scale: scale, isSelected: grade == selection) {
-                        withAnimation(.snappy) { selection = grade }
-                    }
+        LazyVGrid(columns: columns, spacing: 10) {
+            ForEach(Grade.allCases) { grade in
+                GradeCell(grade: grade, scale: scale, isSelected: grade == selection) {
+                    selection = grade
                 }
             }
         }
@@ -85,37 +83,39 @@ struct GradePicker: View {
     }
 }
 
+/// One stable button per grade; only its colors change, so selection never rebuilds the view.
 private struct GradeCell: View {
     let grade: Grade
     let scale: GradeScale
     let isSelected: Bool
     let action: () -> Void
 
-    var body: some View {
-        Group {
-            if isSelected {
-                Button(action: action) { label }
-                    .buttonStyle(.glassProminent)
-                    .tint(grade.color)
-            } else {
-                Button(action: action) { label }
-                    .buttonStyle(.glass)
-            }
-        }
-        .accessibilityAddTraits(isSelected ? .isSelected : [])
-    }
+    private let shape = RoundedRectangle(cornerRadius: 16, style: .continuous)
 
-    private var label: some View {
-        VStack(spacing: 2) {
-            Text(grade.letter)
-                .font(.title3.weight(.bold))
-                .fontDesign(.rounded)
-            Text(grade.points(on: scale), format: .number.precision(.fractionLength(2)))
-                .font(.caption)
-                .monospacedDigit()
-                .opacity(0.8)
+    var body: some View {
+        Button(action: action) {
+            VStack(spacing: 2) {
+                Text(grade.letter)
+                    .font(.title3.weight(.bold))
+                    .fontDesign(.rounded)
+                Text(grade.points(on: scale), format: .number.precision(.fractionLength(2)))
+                    .font(.caption)
+                    .monospacedDigit()
+                    .opacity(0.85)
+            }
+            .foregroundStyle(isSelected ? AnyShapeStyle(Color.white) : AnyShapeStyle(HierarchicalShapeStyle.primary))
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .background {
+                shape.fill(isSelected ? AnyShapeStyle(grade.color.gradient) : AnyShapeStyle(Color.primary.opacity(0.07)))
+            }
+            .overlay {
+                shape.strokeBorder(isSelected ? grade.color : .clear, lineWidth: 1)
+            }
+            .contentShape(shape)
         }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 6)
+        .buttonStyle(.plain)
+        .animation(.easeInOut(duration: 0.15), value: isSelected)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }

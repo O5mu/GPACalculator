@@ -25,14 +25,6 @@
         }
       }
     },
-    "A" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أ" } } }
-    },
-    "A+" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أ+" } } }
-    },
     "Academic Warning" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إنذار أكاديمي" } } }
     },
@@ -41,22 +33,6 @@
     },
     "Add your courses and grades to calculate your GPA." : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "أضف موادك وتقديراتك لحساب معدلك." } } }
-    },
-    "B" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ب" } } }
-    },
-    "B+" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ب+" } } }
-    },
-    "C" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ج" } } }
-    },
-    "C+" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ج+" } } }
     },
     "Cancel" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "إلغاء" } } }
@@ -88,14 +64,6 @@
     "Cumulative GPA" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "المعدل التراكمي" } } }
     },
-    "D" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "د" } } }
-    },
-    "D+" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "د+" } } }
-    },
     "Delete Course" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "حذف المادة" } } }
     },
@@ -110,10 +78,6 @@
     },
     "Excellent" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "ممتاز" } } }
-    },
-    "F" : {
-      "comment" : "Letter grade",
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "هـ" } } }
     },
     "Good" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "جيد" } } }
@@ -148,8 +112,8 @@
     "out of %@" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "من %@" } } }
     },
-    "Out of %lld" : {
-      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "من %lld" } } }
+    "Out of %@" : {
+      "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "من %@" } } }
     },
     "Pass" : {
       "localizations" : { "ar" : { "stringUnit" : { "state" : "translated", "value" : "مقبول" } } }

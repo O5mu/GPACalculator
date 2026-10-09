@@ -103,35 +103,44 @@ struct SettingsView: View {
                 gpaText = store.previousGPA > 0 ? NumberParser.format(store.previousGPA, fraction: 2) : ""
             }
             .onChange(of: creditsText) {
+                let western = NumberParser.westernDigits(creditsText)
+                if western != creditsText { creditsText = western; return }
                 let credits = min(max(NumberParser.parse(creditsText) ?? 0, 0), 999)
                 store.previousCredits = Int(credits)
             }
             .onChange(of: gpaText) {
+                let western = NumberParser.westernDigits(gpaText)
+                if western != gpaText { gpaText = western; return }
                 store.previousGPA = min(max(NumberParser.parse(gpaText) ?? 0, 0), store.scale.maximum)
             }
         }
     }
 }
 
-/// Parses numbers typed with either Western or Arabic digits and separators.
+/// Keeps typed numbers in Western digits, whatever keyboard the student uses.
 enum NumberParser {
-    private static let localFormatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.locale = .current
-        return formatter
-    }()
+    /// Converts Arabic-Indic and Persian digits and separators to 0-9 and ".".
+    static func westernDigits(_ text: String) -> String {
+        var result = ""
+        for scalar in text.unicodeScalars {
+            switch scalar.value {
+            case 0x0660...0x0669: result.unicodeScalars.append(UnicodeScalar(scalar.value - 0x0660 + 0x30)!)
+            case 0x06F0...0x06F9: result.unicodeScalars.append(UnicodeScalar(scalar.value - 0x06F0 + 0x30)!)
+            case 0x066B, 0x002C: result.append(".") // Arabic decimal separator and comma
+            case 0x066C: break // Arabic thousands separator
+            default: result.unicodeScalars.append(scalar)
+            }
+        }
+        return result
+    }
 
     static func parse(_ text: String) -> Double? {
-        let trimmed = text.trimmingCharacters(in: .whitespaces)
+        let trimmed = westernDigits(text).trimmingCharacters(in: .whitespaces)
         guard !trimmed.isEmpty else { return nil }
-        if let number = localFormatter.number(from: trimmed) {
-            return number.doubleValue
-        }
-        return Double(trimmed.replacingOccurrences(of: ",", with: "."))
+        return Double(trimmed)
     }
 
     static func format(_ value: Double, fraction: Int) -> String {
-        value.formatted(.number.precision(.fractionLength(0...fraction)).grouping(.never))
+        value.formatted(.number.precision(.fractionLength(0...fraction)).grouping(.never).locale(.app))
     }
 }

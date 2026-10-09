@@ -86,7 +86,7 @@ struct GPARing: View {
                     .minimumScaleFactor(0.5)
                     .lineLimit(1)
 
-                Text("out of \(scale.maximum.formatted(.number.precision(.fractionLength(2))))")
+                Text("out of \(scale.maximum.formatted(.number.precision(.fractionLength(2)).locale(.app)))")
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

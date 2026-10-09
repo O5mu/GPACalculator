@@ -8,6 +8,7 @@ struct GPACalculatorApp: App {
         WindowGroup {
             ContentView()
                 .environment(store)
+                .environment(\.locale, .app)
         }
     }
 }

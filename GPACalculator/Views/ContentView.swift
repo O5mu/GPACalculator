@@ -133,7 +133,7 @@ private struct GoalPlannerRow: View {
                 Text("Goal Planner")
                     .font(.headline)
                 if store.targetGPA != nil {
-                    Text("Target \(store.goalTarget.formatted(.number.precision(.fractionLength(2))))")
+                    Text("Target \(store.goalTarget.formatted(.number.precision(.fractionLength(2)).locale(.app)))")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 } else {

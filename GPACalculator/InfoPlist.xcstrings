@@ -5,7 +5,7 @@
       "comment" : "Bundle display name",
       "extractionState" : "extracted_with_value",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "معدّلي" } },
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تفوّق" } },
         "en" : { "stringUnit" : { "state" : "new", "value" : "My GPA" } }
       }
     },
@@ -13,7 +13,7 @@
       "comment" : "Bundle name",
       "extractionState" : "extracted_with_value",
       "localizations" : {
-        "ar" : { "stringUnit" : { "state" : "translated", "value" : "معدّلي" } },
+        "ar" : { "stringUnit" : { "state" : "translated", "value" : "تفوّق" } },
         "en" : { "stringUnit" : { "state" : "new", "value" : "GPACalculator" } }
       }
     }
